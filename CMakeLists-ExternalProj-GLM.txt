@@ -1,0 +1,17 @@
+include(ExternalProject)
+
+ExternalProject_Add(
+  glm
+  SOURCE_DIR "${CMAKE_SOURCE_DIR}/3rdparty/glm"
+  GIT_REPOSITORY "https://github.com/g-truc/glm.git"
+  CONFIGURE_COMMAND ""
+  BUILD_COMMAND ""
+  INSTALL_COMMAND ${CMAKE_COMMAND} -E copy_directory <SOURCE_DIR>/glm ${CMAKE_BINARY_DIR}/install/include/glm
+  TEST_COMMAND ""
+  LOG_DOWNLOAD ON
+  LOG_INSTALL ON
+)
+
+# glm is a header-only library, only need to set the include dir
+set(glm_INCLUDE_DIR "${CMAKE_SOURCE_DIR}/3rdparty/glm")
+
