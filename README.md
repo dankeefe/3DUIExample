@@ -12,14 +12,14 @@ the scene.  The interface is a super-simplified version of the CavePainting
 tool (Keefe et al., 2001) and recently seen in TiltBrush and similar tools.
 
 Desktop Controls:
-
+```
 SPACE -- paint
 G     -- grab
 MOUSE -- move the trackers
 R     -- rotate the trackers
 1     -- toggle tracker 1 (paintbrush) on/off
 2     -- toggle tracker 2 (left hand) on/off
-
+```
 
 ## Getting Started
 
