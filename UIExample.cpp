@@ -43,10 +43,8 @@ TODO:
 
 
 
-UIExample::UIExample(int argc, char** argv, const std::string& configFile) :
-    VRApp(argc, argv, configFile),
-    _grabbing(false), _painting(false),
-    _paintingToRoom(glm::mat4(1.0))
+UIExample::UIExample(int argc, char** argv) : VRApp(argc, argv),
+    _grabbing(false), _painting(false), _paintingToRoom(glm::mat4(1.0))
 {
     // Desktop mode
     _rHandTrackerEvents.insert("FakeTracker1_Move");

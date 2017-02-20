@@ -17,17 +17,12 @@ set(header_files
   UIExample.h
 )
 
-set(config_files
-  desktop.xml
-)
 
 set(extra_files
   CMakeLists-ExternalProj-GLM.txt
   README.md
 )
 
-set_source_files_properties(${config_files} PROPERTIES HEADER_FILE_ONLY TRUE)
-source_group("Config Files" FILES ${config_files})
 
 set_source_files_properties(${extra_files} PROPERTIES HEADER_FILE_ONLY TRUE)
 
@@ -105,7 +100,7 @@ endif()
 
 #---------------------- Create Executable ----------------------
 
-add_executable(${PROJECT_NAME} ${source_files} ${header_files} ${config_files} ${extra_files})
+add_executable(${PROJECT_NAME} ${source_files} ${header_files} ${extra_files})
 target_link_libraries(${PROJECT_NAME} ${MinVR_LIBRARIES} ${OPENGL_gl_LIBRARY} ${ALL_LIBS})
 
 # if not found on the system, add dependency to the glm external project

@@ -39,9 +39,9 @@ using namespace MinVR;
 class UIExample : public VRApp {
 public:
     
-    /** The constructor passes argc, argv, and a MinVR config file on to VRApp.
+    /** The constructor passes argc and argv on to VRApp.
      */
-    UIExample(int argc, char** argv, const std::string& configFile);
+    UIExample(int argc, char** argv);
     virtual ~UIExample();
 
     /** This is the critical function to override in a MinVR app that has an
